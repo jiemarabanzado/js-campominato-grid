@@ -37,6 +37,7 @@ function Difficulty(level){
 }
 let choose=document.getElementById('GetDifficulty').addEventListener('click',function(){
     let choice=document.getElementById('difficulty').value;
+    document.getElementById('choice').style.display='none';
     if(choice=='Easy'){
         choice=100;
         Difficulty(choice);
